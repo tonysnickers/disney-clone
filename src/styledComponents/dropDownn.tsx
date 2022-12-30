@@ -17,5 +17,6 @@ export const Div = styled.div`
   display: flex;
   padding: 6px;
   background-color: grey;
+  margin: 0px;
 
 `
