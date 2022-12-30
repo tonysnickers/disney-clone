@@ -4,9 +4,9 @@ import Index from "./pages";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+    </>
   );
 }
 

@@ -1,16 +1,8 @@
-import React from 'react'
-import { Li } from '../styledComponents/dropDownn'
+import React from "react";
+import { Li } from "../styledComponents/header";
 
+const DropDown = ({ menu, setOpen, open }: any) => {
+  return <div></div>;
+};
 
-
-const DropDown = ({menu, setOpen, open}:any) => {
-
-  return (
-    <div>
-
-    </div>
-  )
-}
-
-export default DropDown
-
+export default DropDown;
