@@ -10,7 +10,7 @@ export const Section = styled.div`
   cursor: pointer;
   // justify-content: center;
   @media (max-width: 768px) {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:  1fr;
   }
 `;
 export const CardMovie = styled.div`
