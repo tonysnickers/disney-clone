@@ -7,7 +7,7 @@ const ListSection = () => {
   return (
       <Section>
       {movieContent.map((movie) => (
-        <CardSection movie={movie}/>
+        <CardSection  movie={movie}/>
         ))}
         </Section>
 
