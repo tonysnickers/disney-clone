@@ -8,8 +8,8 @@ const SectionParc = () => {
     <>
       <h1 style={{ textAlign: "center" }}>Parcs</h1>
       <ParcSection>
-        {Parcs.map((parc) => (
-          <CardSection movie={parc} />
+        {Parcs.map((parc, index) => (
+          <CardSection movie={parc}  />
         ))}
       </ParcSection>
     </>

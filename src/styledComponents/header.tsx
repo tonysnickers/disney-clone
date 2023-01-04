@@ -18,7 +18,6 @@ export const Div = styled.div`
   display: flex;
   padding: 12px 12px 12px 25px;
   margin: 0px;
-
   img {
     width: 90px;
     margin-right: 35px;
@@ -34,9 +33,8 @@ export const HeaderHome = styled.div`
   position: relative;
   &:hover {
     -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.2);
     transform: scale(.9);
-    margin-top: 45px;
   }
 `;
 

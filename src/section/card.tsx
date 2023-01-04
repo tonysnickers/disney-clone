@@ -5,47 +5,41 @@ import {
   H3,
   ImgMovie,
   SectionText,
-  Section,
 } from "./section";
 
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+
 
 const CardSection = ({ movie }: any) => {
   return (
-    //<CardMovie>
-    //   <ImgMovie src={movie.img} alt="" />
-    //     <H3>{movie.title}</H3>
-    //   <SectionText>
-    //     <Description>{movie.description}</Description>
-    //     <p>{movie.footer}</p>
-    //   </SectionText>
-
-    //</CardMovie>
-
-    <CardMovie>
+    <CardMovie key={movie.id}>
       <ImgMovie src={movie.img} alt="" />
-      <CardContent>
-        <Typography gutterBottom variant="h6" component="div">
-        {movie.title}
-        </Typography>
-        <Typography variant="body1" color="text.secondary">
-        {movie.description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-      <p>{movie.footer}</p>
-      {/* <Typography variant="caption" color="text.secondary">
-      <p>{movie.footer}</p>
-        </Typography> */}
-        {/* <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button> */}
-      </CardActions>
+        <H3>{movie.title}</H3>
+      <SectionText>
+        <Description>{movie.description}</Description>
+        <p>{movie.footer}</p>
+      </SectionText>
+
     </CardMovie>
+
+    // <CardMovie>
+    //   <ImgMovie src={movie.img} alt="" />
+    //   <CardContent>
+    //     <Typography gutterBottom variant="h6" component="div">
+    //     {movie.title}
+    //     </Typography>
+    //     <Typography variant="body1" color="text.secondary">
+    //     {movie.description}
+    //     </Typography>
+    //   </CardContent>
+    //   <CardActions>
+    //   <p>{movie.footer}</p>
+    //   {/* <Typography variant="caption" color="text.secondary">
+    //   <p>{movie.footer}</p>
+    //     </Typography> */}
+    //     {/* <Button size="small">Share</Button>
+    //     <Button size="small">Learn More</Button> */}
+    //   </CardActions>
+    // </CardMovie>
   );
 };
 
