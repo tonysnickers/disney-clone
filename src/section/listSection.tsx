@@ -1,17 +1,16 @@
-import React from 'react'
-import { movieContent } from '../menuItems/menuItems'
-import CardSection from './card'
-import { Section } from './section'
+import React from "react";
+import { movieContent } from "../menuItems/menuItems";
+import CardSection from "./card";
+import { Section } from "../styledComponents/section/section";
 
 const ListSection = () => {
   return (
-      <Section>
+    <Section>
       {movieContent.map((movie) => (
-        <CardSection  movie={movie}/>
-        ))}
-        </Section>
+        <CardSection movie={movie} />
+      ))}
+    </Section>
+  );
+};
 
-  )
-}
-
-export default ListSection
+export default ListSection;

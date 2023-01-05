@@ -10,7 +10,6 @@ export const searchMovie = () => {
         "https://api.themoviedb.org/3/movie/popular?api_key=7a6a1bf84273ea2287a836a3821ac0a7&language=en-US&page=1"
       )
   );
-  console.log(data);
 
   return {
     data: data?.data.results || [],

@@ -4,7 +4,7 @@ import Header from "../components/header";
 import SectionParc from "../components/SectionParc";
 import ListSection from "../section/listSection";
 import { searchMovie } from "../api/index";
-import SectionMovie from "../components/sectionMovie";
+import ProductSlider from "../swiper/ProductSlider";
 
 const Index = () => {
   const { data, error, loading } = searchMovie();
@@ -14,7 +14,7 @@ const Index = () => {
       <Header />
       <ListSection />
       <SectionParc />
-      <SectionMovie movies={data} />
+      <ProductSlider movies={data} />
     </div>
   );
 };

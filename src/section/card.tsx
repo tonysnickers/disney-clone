@@ -5,20 +5,17 @@ import {
   H3,
   ImgMovie,
   SectionText,
-} from "./section";
+} from "../styledComponents/section/section";
 
-
-
-const CardSection = ({ movie }: any) => {
+const CardSection = ({ movie, index }: any) => {
   return (
-    <CardMovie key={movie.id}>
+    <CardMovie>
       <ImgMovie src={movie.img} alt="" />
-        <H3>{movie.title}</H3>
+      <H3>{movie.title}</H3>
       <SectionText>
         <Description>{movie.description}</Description>
         <p>{movie.footer}</p>
       </SectionText>
-
     </CardMovie>
 
     // <CardMovie>
