@@ -5,7 +5,7 @@ import {
   HeaderHome,
   Paragraph,
   Title,
-} from "../styledComponents/header";
+} from "../styledComponents/header/header";
 import Navbar from "./navbar";
 
 const Header = () => {

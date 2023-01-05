@@ -1,5 +1,5 @@
 import { menus } from "../menuItems/menuItems";
-import { A, Div, Li, Ul } from "../styledComponents/header";
+import { A, Div, Li, Ul } from "../styledComponents/header/header";
 
 export default function Navbar() {
   return (
@@ -11,7 +11,9 @@ export default function Navbar() {
       <Ul>
         {menus.map((menu, index) => (
           // eslint-disable-next-line jsx-a11y/anchor-is-valid
-          <Li key={index}><A href="#">{menu.title}</A></Li>
+          <Li key={index}>
+            <A href="#">{menu.title}</A>
+          </Li>
         ))}
       </Ul>
     </Div>
