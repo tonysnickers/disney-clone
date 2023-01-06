@@ -1,21 +1,24 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
-import Header from "../components/header";
-import SectionParc from "../components/SectionParc";
+import Header from "../components/header/header";
+import SectionParc from "../components/section/SectionParc";
 import ListSection from "../section/listSection";
 import { searchMovie } from "../api/index";
-import ProductSlider from "../swiper/ProductSlider";
+import ProductSlider from "../components/swiper/ProductSlider";
+import Spectacle from "../components/spectacle/Spectacle";
 
 const Index = () => {
   const { data, error, loading } = searchMovie();
+  console.log(data);
 
   return (
-    <div>
+    <>
       <Header />
       <ListSection />
       <SectionParc />
       <ProductSlider movies={data} />
-    </div>
+      <Spectacle/>
+    </>
   );
 };
 

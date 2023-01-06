@@ -5,11 +5,12 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CardSwiper from "./CardSwiper";
-import { SliderContent } from "../styledComponents/slider/slider";
+import { SliderContent } from "../../styledComponents/swiper/swiper";
 
 const ProductSlider = ({ movies }: any) => {
   return (
     <SliderContent>
+      <h1 style={{ textAlign: "center" }}>Film</h1>
       <Swiper
         freeMode={true}
         grabCursor={true}

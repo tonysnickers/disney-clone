@@ -1,5 +1,5 @@
-import { menus } from "../menuItems/menuItems";
-import { A, Div, Li, Ul } from "../styledComponents/header/header";
+import { menus } from "../../menuItems/menuItems";
+import { A, Div, Li, Ul } from "../../styledComponents/header/header";
 
 export default function Navbar() {
   return (
